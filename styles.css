@@ -1,0 +1,146 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: radial-gradient(circle at 10% 20%, rgb(164, 38, 199) 0.1%, rgb(65, 220, 255) 90.1%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.upper {
+    background-color: #ffca28;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 1);
+    text-align: center;
+    width: 82%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.2s ease;
+    position: absolute;
+    top: 30px;
+}
+
+.upper button {
+    background-color:#8ee3e6;
+    border: none;
+    color: black;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+    transition: all 0.2s ease;
+}
+
+.container {
+    background-color: #8ee3e6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 1);
+    text-align: center;
+    width: 81%;
+    transition: all 0.2s ease;
+    position: absolute;
+    top: 150px;
+}
+
+.line {
+    width: 97%;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    bottom: 15px;
+}
+
+#hours, #minutes, #seconds {
+    width: 2%;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffca28;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+h1 {
+    font-size: 24px;
+    color: black;
+}
+
+#totalTime {
+    margin-bottom: 0px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+input {
+    width: 17vw;
+    padding: 9px;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="text"], input[type="number"] {
+    background-color: #f8cfd0;
+}
+
+button {
+    background-color: #ffca28;
+    border: none;
+    color: black;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+li.completed {
+    text-decoration: line-through;
+    opacity: 1;
+}
+
+.exerciseli {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.exerciseli {
+    background-color: #8ee3e6;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.exerciseli li button {
+    margin-left: 10px;
+}
+
+.summary {
+    margin-top: 20px;
+    background-color: #fff;}
