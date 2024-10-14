@@ -1,30 +1,29 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Workout Timer</title>
+    <title>Workout Tracker</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="upper">
         <h1>Track Your Reps & Time Efficiently</h1>
         <div id="totalTime">00:00:00</div>
-        <button onclick="startAll()" class="upstart">Start</button>
+        <button onclick="start_t_time()" class="upstart">Start</button>
     </div>
     <div class="container">
         <input type="text" id="exerciseName" placeholder="Exercise Name">
-        <input type="number" class="reps" placeholder="Number of Reps">
-        <input type="number" class="hours" placeholder="Hours">
-        <input type="number" class="minutes" placeholder="Minutes">
-        <input type="number" class="seconds" placeholder="Seconds">
-        <button onclick="addExercise()">Add Exercise</button>
-        <button onclick="newWorkout()">New Workout</button>
-        <button onclick="showSummary()">End Workout</button>
+        <input type="number" id="reps" placeholder="Number of Reps">
+        <input type="number" id="hours" placeholder="00">
+        <input type="number" id="minutes" placeholder="00">
+        <input type="number" id="seconds" placeholder="00">
+        <button onclick="addex()">Add Exercise</button>
+        <button onclick="new_workout()">New Workout</button>
+        <button onclick="showsummary()">End Workout</button>
         <div class="line"></div>
-        <ul id="exerciseList"></ul>
-        <div id="summaryTable" style="display: none;"></div>
+        <ul id="exerciseli"></ul>
+        <div id="summary" style="display: none;"></div>
     </div>
     <script src="script.js"></script>
 </body>
